@@ -1,0 +1,47 @@
+{
+    "name": "awema-pl/module-tab-builder",
+    "description": "Module tab builder for layout",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karol Golec",
+            "email": "karolgolec10@gmail.com",
+            "homepage": "https://github.pl/awema-pl/module-tab-builder",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "karolgolec10@gmail.com"
+    },
+    "homepage": "https://github.com/awema-pl/module-tab-builder",
+    "keywords": [
+        "Laravel",
+        "TabBuilder"
+    ],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8|~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwemaPL\\TabBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AwemaPL\\TabBuilder\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AwemaPL\\TabBuilder\\TabBuilderServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

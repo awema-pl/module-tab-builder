@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs-switcher example</title>
+
+    <script>
+    const AWEMA_CONFIG = {
+        key: 'd967535b610145f1111c7dfb5be56d11'
+    }
+    </script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.awema.pl/d967535b610145f1111c7dfb5be56d11/awema-pl/indigo-layout/v1.x.x/css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.awema.pl/d967535b610145f1111c7dfb5be56d11/awema-pl/context-menu/v1.x.x/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.awema.pl/d967535b610145f1111c7dfb5be56d11/awema-pl/context-menu/v0.x.x/css/main.css">
+
+    <script src="https://cdn.awema.pl/d967535b610145f1111c7dfb5be56d11/awema-pl/base-js/v1.x.x/js/main.js"></script>
+
+    <style>
+    @media screen and (max-width: 500px) {
+        .tab-builder__toggler {
+            min-width: 100%;
+        }
+    }
+
+    .container {
+        box-sizing: border-box;
+        width: 1200px;
+        margin: auto;
+        padding: 0 30px;
+        max-width: 100%
+    }
+    </style>
+</head>
+<body>
+    <div class="container mainwrapper">
+        <h1 class="in-header">Tab-builder example</h1>
+        <content-wrapper>
+            <tab-builder>
+                <!-- <template slot="tab-toggler" slot-scope="toggler">
+                    {{ toggler.item.label }}
+                    {{ toggler.isActive ? '&checkmark;' : (toggler.item.url ? '&rarr;' : '&times;')}}
+                </template> -->
+                <tb-tab label="Tab 1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, libero? Dolor accusamus laudantium commodi consequuntur suscipit, est in quia, nobis nemo architecto labore, tempora dignissimos hic minima ex amet voluptate.
+                </tb-tab>
+                <tb-tab label="Tab 2">
+                    Libero eveniet, assumenda tenetur iure recusandae commodi distinctio velit, dicta excepturi animi ullam minima illum quidem voluptates, minus porro amet?
+                    <p>Debitis quaerat eos qui consequatur distinctio architecto dolores impedit quisquam quia similique blanditiis numquam quasi nulla iusto, temporibus, alias fugit?</p>
+                    <p>Veritatis nobis praesentium enim iste, nesciunt voluptas debitis fuga impedit mollitia porro quisquam, neque necessitatibus nostrum alias voluptatibus vero temporibus.</p>
+                    <p>Aliquid laudantium laboriosam sit voluptates architecto in exercitationem adipisci ducimus voluptas eos blanditiis, dolorum, minus maxime distinctio eveniet pariatur autem.</p>
+                    <button>Test</button>
+                </tb-tab>
+                <tb-tab label="Tab 3">
+                    Test tab 3
+                </tb-tab>
+                <tb-tab label="Tab 4">
+                    Test tab 4
+                </tb-tab>
+                <tb-tab label="Tab 5">
+                    Test tab 5
+                </tb-tab>
+                <tb-link label="Link" url="//google.com"></tb-link>
+            </tab-builder>
+        </content-wrapper>
+    </div>
+</body>
+</html>
